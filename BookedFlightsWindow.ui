@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BookedFlightsWindow</class>
+ <widget class="QDialog" name="BookedFlightsWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>280</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Booked Flights</string>
+  </property>
+  <property name="styleSheet">
+   <string>
+    QDialog {
+        background-color: #f6f7f9;
+        font-family: -apple-system, BlinkMacSystemFont, Inter, Roboto, Helvetica, Arial, sans-serif;
+        font-size: 12pt;
+        color: #0c131d;
+    }
+   </string>
+  </property>
+  <widget class="QPushButton" name="cancelButton">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>400</y>
+     <width>260</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Unbook</string>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string>
+     QPushButton {
+         background-color: #0c73fe;
+         color: #ffffff;
+         border-radius: 8px;
+         padding: 8px;
+     }
+     QPushButton:hover {
+         background-color: #002d50;
+     }
+     QPushButton:pressed {
+         background-color: #0c131d;
+     }
+    </string>
+   </property>
+  </widget>
+  <widget class="QListView" name="listView">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>260</width>
+     <height>380</height>
+    </rect>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::NoEditTriggers</set>
+   </property>
+   <property name="styleSheet">
+    <string>
+     QListView {
+         border: 1px solid #e1e5ec;
+         border-radius: 8px;
+         background-color: #ffffff;
+         color: #0c131d;
+         font-family: -apple-system, BlinkMacSystemFont, Inter, Roboto, Helvetica, Arial, sans-serif;
+     }
+     QListView::item {
+         padding: 8px;
+         border-bottom: 1px solid #eff1f4;
+     }
+     QListView::item:hover {
+         background-color: #c2e9fd;
+     }
+     QListView::item:selected {
+         background-color: #9ea9b7;
+         color: #ffffff;
+     }
+    </string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

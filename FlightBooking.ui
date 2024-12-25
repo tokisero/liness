@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FlightBooking</class>
+ <widget class="QDialog" name="FlightBooking">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>505</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Flight Booking</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+      QDialog {
+          background-color: #f6f7f9;
+          font-family: -apple-system, BlinkMacSystemFont, Inter, Roboto, Helvetica, Arial, sans-serif;
+          color: #0c131d;
+      }
+   </string>
+  </property>
+  <widget class="QLabel" name="flightInfoLabel">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>30</y>
+     <width>341</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Flight Information</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="seatClassComboBox">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>280</y>
+     <width>350</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+      QComboBox {
+        background-color: #ffffff;
+        border: 1px solid #e1e5ec;
+        padding: 4px;
+        font-size: 14px;
+      }
+    </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>250</y>
+     <width>350</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Select flight class:</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="setNumbers">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>380</y>
+     <width>350</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+      QComboBox {
+        background-color: #ffffff;
+        border: 1px solid #e1e5ec;
+        padding: 4px;
+        font-size: 14px;
+      }
+    </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="numberOfSeats">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>350</y>
+     <width>211</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Select number of seats:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="bookButton">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>440</y>
+     <width>150</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+      QPushButton {
+        background-color: #0c73fe;
+        color: #ffffff;
+        font-size: 14px;
+        border-radius: 6px;
+        padding: 6px;
+      }
+      QPushButton:hover {
+        background-color: #005bb5;
+      }
+      QPushButton:pressed {
+        background-color: #003f7f;
+      }
+    </string>
+   </property>
+   <property name="text">
+    <string>Book</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cancelButton">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>440</y>
+     <width>150</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+      QPushButton {
+        background-color: #0c73fe;
+        color: #ffffff;
+        font-size: 14px;
+        border-radius: 6px;
+        padding: 6px;
+      }
+      QPushButton:hover {
+        background-color: #005bb5;
+      }
+      QPushButton:pressed {
+        background-color: #003f7f;
+      }
+    </string>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+  </widget>
+  <widget class="QScrollArea" name="scrollAreaPassengerFields">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>10</y>
+     <width>370</width>
+     <height>481</height>
+    </rect>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>368</width>
+      <height>479</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

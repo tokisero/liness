@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AdminPanell</class>
+ <widget class="QDialog" name="AdminPanell">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>960</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Admin Panel</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+      QDialog {
+          background-color: #f6f7f9;
+          font-family: -apple-system, BlinkMacSystemFont, Inter, Roboto, Helvetica, Arial, sans-serif;
+          color: #0c131d;
+      }
+   </string>
+  </property>
+  <widget class="QPushButton" name="DeleteButton">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>170</y>
+     <width>300</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+      QPushButton {
+        background-color: #0c73fe;
+        color: #ffffff;
+        font-size: 14px;
+        border-radius: 6px;
+        padding: 6px;
+      }
+      QPushButton:hover {
+        background-color: #005bb5;
+      }
+      QPushButton:pressed {
+        background-color: #003f7f;
+      }
+    </string>
+   </property>
+   <property name="text">
+    <string>Delete</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="logoutButton">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>220</y>
+     <width>300</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+      QPushButton {
+        background-color: #0c73fe;
+        color: #ffffff;
+        font-size: 14px;
+        border-radius: 6px;
+        padding: 6px;
+      }
+      QPushButton:hover {
+        background-color: #005bb5;
+      }
+      QPushButton:pressed {
+        background-color: #003f7f;
+      }
+    </string>
+   </property>
+   <property name="text">
+    <string>Logout</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="AddButton">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>300</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+      QPushButton {
+        background-color: #0c73fe;
+        color: #ffffff;
+        font-size: 14px;
+        border-radius: 6px;
+        padding: 6px;
+      }
+      QPushButton:hover {
+        background-color: #005bb5;
+      }
+      QPushButton:pressed {
+        background-color: #003f7f;
+      }
+    </string>
+   </property>
+   <property name="text">
+    <string>Add</string>
+   </property>
+  </widget>
+  <widget class="QTableView" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>20</y>
+     <width>600</width>
+     <height>450</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+      QTableView {
+        border: 1px solid #e1e5ec;
+        font-size: 14px;
+        gridline-color: #eff1f4;
+        background-color: #ffffff;
+      }
+      QHeaderView::section {
+        background-color: #e1e5ec;
+        padding: 6px;
+        border: 1px solid #eff1f4;
+        font-weight: bold;
+      }
+    </string>
+   </property>
+   <property name="showGrid">
+    <bool>true</bool>
+   </property>
+   <attribute name="verticalHeaderVisible">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QPushButton" name="UpdateButton">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>70</y>
+     <width>300</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+      QPushButton {
+        background-color: #0c73fe;
+        color: #ffffff;
+        font-size: 14px;
+        border-radius: 6px;
+        padding: 6px;
+      }
+      QPushButton:hover {
+        background-color: #005bb5;
+      }
+      QPushButton:pressed {
+        background-color: #003f7f;
+      }
+    </string>
+   </property>
+   <property name="text">
+    <string>Update</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ListOfUsers">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>120</y>
+     <width>300</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+      QPushButton {
+        background-color: #0c73fe;
+        color: #ffffff;
+        font-size: 14px;
+        border-radius: 6px;
+        padding: 6px;
+      }
+      QPushButton:hover {
+        background-color: #005bb5;
+      }
+      QPushButton:pressed {
+        background-color: #003f7f;
+      }
+    </string>
+   </property>
+   <property name="text">
+    <string>List of users</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
